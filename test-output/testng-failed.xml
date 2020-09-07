@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="TestOnChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TstNGUnitFrameWork.Annotations.GridParallel">
+        <methods>
+          <include name="launchBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TstNGUnitFrameWork.Annotations.GridParallel -->
+    </classes>
+  </test> <!-- TestOnChrome(failed) -->
+  <test thread-count="5" name="TestOnFirefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TstNGUnitFrameWork.Annotations.GridParallel">
+        <methods>
+          <include name="launchBrowser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TstNGUnitFrameWork.Annotations.GridParallel -->
+    </classes>
+  </test> <!-- TestOnFirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
